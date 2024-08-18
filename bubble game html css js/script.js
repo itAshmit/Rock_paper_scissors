@@ -31,6 +31,7 @@ function replay(){
             <button id="replay">Replay</button></div>`;
             document.querySelector("#replay").addEventListener("click", restartGame);
 }
+
 let newhit = "";
 function hitnumber() {
     newhit = Math.floor(Math.random() * 10);

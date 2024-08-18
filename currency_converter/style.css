@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #a8c0ff, #3f2b96); /* Example gradient background */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    height: 350px;
+    padding: 20px;
+    
+    /* Glassmorphism effect */
+    background: rgba(255, 255, 255, 0.2); /* White with 20% opacity */
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Apply a blur to the background */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    
+    /* Shadow */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        height: auto; /* Allow height to adjust */
+        padding: 10px;
+    }
+}
+
+.converter {
+    font-size: 1.5rem;
+    color: #140303; /* Text color to stand out against the glassmorphism background */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ratecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.from, .to {
+    flex: 1;
+    text-align: center;
+    color: #140303;
+    position: relative;
+}
+
+.svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #140303;
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-color: rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        border-color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+input:focus {
+    outline: none;
+    animation: blink 1s infinite; /* Blinking animation with 1-second duration, repeating infinitely */
+}
