@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="calculator">
+            <input type="text" id="display" readonly>
+            <div class="buttons">
+                <button onclick="pressKey('1')">1</button>
+                <button onclick="pressKey('2')">2</button>
+                <button onclick="pressKey('3')">3</button>
+                <button onclick="pressKey('+')">+</button>
+                <button onclick="pressKey('4')">4</button>
+                <button onclick="pressKey('5')">5</button>
+                <button onclick="pressKey('6')">6</button>
+                <button onclick="pressKey('-')">-</button>
+                <button onclick="pressKey('7')">7</button>
+                <button onclick="pressKey('8')">8</button>
+                <button onclick="pressKey('9')">9</button>
+                <button onclick="pressKey('*')">*</button>
+                <button onclick="pressKey('0')">0</button>
+                <button onclick="pressKey('.')">.</button>
+                <button onclick="calculateResult()">=</button>
+                <button onclick="pressKey('/')">/</button>
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="backspace()">&#8592;</button>
+            </div>
+        </div>
+        <div id="reference">
+            Made By- ItsASMIT
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
