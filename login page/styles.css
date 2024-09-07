@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#github #gitlink {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+#github:hover #gitlink {
+    transform: scale(0.9);
+}
+
+/* Neumorphic Design for the centered div */
+.main-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #e0eafc00;
+    border-radius: 20px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.1),
+                -7px -7px 15px rgba(255, 255, 255, 0.7);
+    transition: box-shadow 1s ease;
+}
+
+.main-container:hover {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15),
+                -3px -3px 10px rgba(255, 255, 255, 0.6);
+}
+
+.login-box {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #e0eafc;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+                inset -2px -2px 5px rgba(255, 255, 255, 0.7);
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00bfa6;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2),
+                -4px -4px 10px rgba(255, 255, 255, 0.6);
+}
+
+button[type="submit"]:hover {
+    background-color: #009688;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2),
+                -2px -2px 5px rgba(255, 255, 255, 0.6);
+}
+
+.error {
+    color: #d32f2f;
+    font-size: 12px;
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .main-container {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button[type="submit"] {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}

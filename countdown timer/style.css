@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #004643; 
+}
+
+#nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#github-link {
+    height: 24px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+#github-link:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+#timer {
+    font-size: 95px;
+    margin-bottom: 20px;
+    border: solid 2px #abd1c6;
+    border-radius: 19px;
+    color: #abd16d;
+    padding: 10px 20px;
+    background-color: #001e1d;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f9bc60;
+    border: none;
+    border-radius: 5px;
+    color: #001e1d;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d99a42;
+}
+
+#savedTimesContainer {
+    max-height: 100px;
+    overflow-y: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border: solid 2px #abd1c6;
+    border-radius: 10px;
+    background-color: #001e1d;
+    width: 100%;
+    max-width: 400px;
+}
+
+#savedTimes {
+    font-size: 24px;
+    color: #eff0f3;
+}
+
+#footer {
+    font-size: 7px;
+    color: #eff0f3;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #timer {
+        font-size: 75px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #savedTimesContainer {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    #timer {
+        font-size: 50px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    #savedTimesContainer {
+        max-width: 250px;
+    }
+}

@@ -75,6 +75,7 @@ button:active {
     display: flex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 10px;
+    cursor: none;
 }
 @media screen and (max-width:550px) {
     .main-container {
@@ -141,5 +142,6 @@ button:active {
         display: flex;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 10px;
+        cursor: none;
     }
 }
