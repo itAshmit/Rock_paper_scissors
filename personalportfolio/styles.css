@@ -1,0 +1,73 @@
+body{
+    background: #f4c4f3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc67fa, #f4c4f3);
+    background: linear-gradient(to right, #fc67fa, #f4c4f3);
+    padding: 0px;
+    margin: 0px;
+}
+.main{
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    height: 60px;
+    display: flex;
+    justify-content:space-evenly;
+    color: white;
+}
+.right-nav{
+    width: 50%;
+    background-color: floralwhite;
+    height: 60px;
+    color: black;
+}
+.left-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    width: 50%;
+    background-color: blanchedalmond;
+    height: 60px;
+}
+
+.section1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aboutme{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.paragraph{
+    background-color: cadetblue;
+    width: 50%;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:solid 2px black;
+    border-radius: 25px;
+    padding: 5px;
+    transform: translate(0%,700%);
+}
+
+.myphoto{
+    width:50%;
+    display: flex;
+    justify-content: center;
+}
+.profile{
+    height: 50px;
+    width: 50px;
+    border: solid 5px rgb(160, 18, 115);
+    border-radius: 30px;
+}
